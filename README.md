@@ -22,7 +22,7 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 
 <p align="center">
 Launch the utility: <br/>
-<img src=""https://i.imgur.com/62TgaWL.png" height="80%" width="80%""/>
+<img src="images/add icmp inspection to policy-map.PNG" height="80%" width="80%""/>
 <br />
 <br />
 Select the disk:  <br/>

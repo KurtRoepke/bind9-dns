@@ -9,8 +9,10 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 
 <h2></h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Cisco CML 2.8</b> 
+- <b>Bind9</b>
+- <b>Ubuntu terminal</b>
+
 
 <h2>Environments Used </h2>
 

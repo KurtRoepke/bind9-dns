@@ -22,31 +22,31 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 
 <p align="center">
 Launch the utility: <br/>
-<img src="images/add icmp inspection to policy-map.PNG" height="80%" width="80%""/>
+<img src="images/add icmp inspection to policy-map.PNG" height="80%" width="80%"/>
 <br />
 <br />
 Select the disk:  <br/>
-<img src=/>
+<img src=     height="80%" width="80%"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src=/>
+<img src=     height="80%" width="80%"/>
+<img src=     height="80%" width="80%"/>
 <br />
 <br />
 Confirm your selection:  <br/>
-<img src=/>
+<img src=     height="80%" width="80%"/>
 <br />
 <br />
 Wait for process to complete (may take some time):  <br/>
-<img src=/>
+<img src=     height="80%" width="80%"/>
 <br />
 <br />
 Sanitization complete:  <br/>
-<img src=/>
+<img src=     height="80%" width="80%"/>
 <br />
 <br />
 Observe the wiped disk:  <br/>
-<img src=/>
+<img src=     height="80%" width="80%"/>
 </p>
 
 <!--

@@ -62,23 +62,34 @@ loopback interface and its own ip address.
 <br />
 Named.conf.options<br/>
 <img src=  "images/named.conf.options 7.PNG"   height="80%" width="80%"/>
-
+This is the main file of bind 9 dns. first its good to have an acl for security 
+resons. This is also where you would add the dns forwarders and allow queries.
 <br />
 <br />
-blank <br/>
+Named.conf.local<br/>
 <img src=  "images/named.conf.local 8.PNG"   height="80%" width="80%"/>
+This is were you declare diffrent zones for this example we have a forward
+and reverse zone. for the reverse zone dns looks up an ip for right to left
+so one half of the ip is here ans the other in the actual zone file.
 <br />
 <br />
-blank <br/>
+<br/>
 <img src=  "images/no resolve ipv6 9.PNG"   height="80%" width="80%"/>
+<p>Here we are not using ipv6 at this time so we should go into the 
+/etc/default/named file and allow only to resolve ipv4 address.
+this will simplify the logs.</p>
 <br />
 <br />
-blank <br/>
+Create soa file<br/>
 <img src=  "images/db.mylab soa 10.PNG"   height="80%" width="80%"/>
+The soa file it the main conifguration file for the zone. Here we have many diffrent 
+timers and the main dns files.
 <br />
 <br />
-blank <br/>
+configure reverse zone<br/>
 <img src=  "images/reverse zone 11.PNG"   height="80%" width="80%"/>
+<p>This file is similar to the file above but intsted of resolving domain names
+it resolves an ip address to a domain name.</p>
 <br />
 <br />
 add image of fuctioning output<br/>

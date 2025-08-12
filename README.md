@@ -20,33 +20,35 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 
 <h2>Program walk-through:</h2>
 
-<p align="images/topology.PNGcenter">
+<p align="center">
 Launch the utility: <br/>
-<img src="images/" height="80%" width="80%"/>
+<img src="images/topology.PNG" height="80%" width="80%"/>
 <br />
 <br />
 Select the disk:  <br/>
-<img src=     height="80%" width="80%"/>
+<img src="images/asa set interfaces 1.PNG"     height="80%" width="80%"/>
 <br />
 <br />
-<img src=     height="80%" width="80%"/>
-<img src=     height="80%" width="80%"/>
+<img src= "images/icmp and default route 2.PNG"    height="80%" width="80%"/>
+ <br />
+ <br />
+<img src= "images/set nat 3.PNG"    height="80%" width="80%"/>
 <br />
 <br />
 Confirm your selection:  <br/>
-<img src=     height="80%" width="80%"/>
+<img src= "images/change hostname 4.PNG"    height="80%" width="80%"/>
 <br />
 <br />
 Wait for process to complete (may take some time):  <br/>
-<img src=     height="80%" width="80%"/>
+<img src=  "images/download bind9 5.PNG"   height="80%" width="80%"/>
 <br />
 <br />
 Sanitization complete:  <br/>
-<img src=     height="80%" width="80%"/>
+<img src= "images/set netplan 6.PNG"    height="80%" width="80%"/>
 <br />
 <br />
 Observe the wiped disk:  <br/>
-<img src=     height="80%" width="80%"/>
+<img src=  "images/named.conf.options 7.PNG"   height="80%" width="80%"/>
 </p>
 
 <!--

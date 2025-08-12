@@ -21,34 +21,48 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+The topology we will be using <br/>
 <img src="images/topology.PNG" height="80%" width="80%"/>
 <br />
 <br />
-Select the disk:  <br/>
+Configure interfaces on asa firewall<br/>
 <img src="images/asa set interfaces 1.PNG"     height="80%" width="80%"/>
+ <p>Configure the interfaces on the asa firewall while changing the security level
+ of the dmz zone to 50 so the internal interface can ping the dmz.</p>
 <br />
 <br />
+Create default route<br/>
 <img src= "images/icmp and default route 2.PNG"    height="80%" width="80%"/>
+<p>Create a default route pointing to the external network router to allow
+access to the external network.</p>
  <br />
  <br />
+  Configure pat <br />
 <img src= "images/set nat 3.PNG"    height="80%" width="80%"/>
+create a network object for both the internal network and the dmz.
+Next add an ip address to the object and point it to the external
+interface.
 <br />
 <br />
-Confirm your selection:  <br/>
+Change hostname on nameserver <br/>
 <img src= "images/change hostname 4.PNG"    height="80%" width="80%"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
+download bind9<br/>
 <img src=  "images/download bind9 5.PNG"   height="80%" width="80%"/>
+first use command "sudo apt-get update" to update the machine next use 
+"sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.
 <br />
 <br />
-Sanitization complete:  <br/>
+Change netplan<br/>
 <img src= "images/set netplan 6.PNG"    height="80%" width="80%"/>
+Modify the netplan file to change the dns server to its self using the
+loopback interface and its own ip address.
 <br />
 <br />
-Observe the wiped disk:  <br/>
+Named.conf.options<br/>
 <img src=  "images/named.conf.options 7.PNG"   height="80%" width="80%"/>
+
 <br />
 <br />
 blank <br/>
@@ -64,10 +78,10 @@ blank <br/>
 <br />
 <br />
 blank <br/>
-<img src=  "images/"   height="80%" width="80%"/>
+<img src=  "images/reverse zone 11.PNG"   height="80%" width="80%"/>
 <br />
 <br />
-blank <br/>
+add image of fuctioning output<br/>
 <img src=  "images/"   height="80%" width="80%"/>
 
 

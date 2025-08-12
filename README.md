@@ -20,9 +20,9 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
+<p align="images/topology.PNGcenter">
 Launch the utility: <br/>
-<img src="images/add icmp inspection to policy-map.PNG" height="80%" width="80%"/>
+<img src="images/" height="80%" width="80%"/>
 <br />
 <br />
 Select the disk:  <br/>

@@ -49,7 +49,30 @@ Sanitization complete:  <br/>
 <br />
 Observe the wiped disk:  <br/>
 <img src=  "images/named.conf.options 7.PNG"   height="80%" width="80%"/>
-</p>
+<br />
+<br />
+blank <br/>
+<img src=  "images/named.conf.local 8.PNG"   height="80%" width="80%"/>
+<br />
+<br />
+blank <br/>
+<img src=  "images/no resolve ipv6 9.PNG"   height="80%" width="80%"/>
+<br />
+<br />
+blank <br/>
+<img src=  "images/db.mylab soa 10.PNG"   height="80%" width="80%"/>
+<br />
+<br />
+blank <br/>
+<img src=  "images/"   height="80%" width="80%"/>
+<br />
+<br />
+blank <br/>
+<img src=  "images/"   height="80%" width="80%"/>
+
+
+
+
 
 <!--
  ```diff

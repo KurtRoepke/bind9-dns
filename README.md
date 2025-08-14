@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
+   <head>
 <h1>Bind 9 Primary and secondary dns server</h1>
-
- 
-
+   <style>
+            /* Your CSS rules go here */
+        </style>
+   </head>
 <h2>Description</h2>
 Project consisting of a bind9 primary and secondary server connected to a cisco asa dmz interface. To check functionality i then connected a client machine to an internal interface and finally linked the asa to an external connecter to access the outside network.
 <br />

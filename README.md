@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<body>
 <h1>Bind 9 Primary and secondary dns server</h1>
 
  
@@ -109,3 +112,5 @@ add image of fuctioning output<br/>
 @@ text in purple (and bold)@@
 ```
 --!>
+</body>
+</html>

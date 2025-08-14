@@ -49,7 +49,7 @@ Change hostname on nameserver <br/>
 <img src= "images/change hostname 4.PNG"    height="80%" width="80%"/>
 <br />
 <br />
-download bind9<br/>
+Download bind9<br/>
 <img src=  "images/download bind9 5.PNG"   height="80%" width="80%"/>
 <p align="center">first use command "sudo apt-get update" to update the machine next use 
 "sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.</p>
@@ -68,13 +68,13 @@ resons. This is also where you would add the dns forwarders and allow queries.</
 <br />
 <br />
 <head align="center">Named.conf.local<head/>
-<img src="images/named.conf.local 8.PNG"   height="80%" width="80%"/>
+<img src="images/named.conf.local 8.PNG" align="center"  height="80%" width="80%"/>
 <p align="center">This is were you declare diffrent zones for this example we have a forward
 and reverse zone. for the reverse zone dns looks up an ip for right to left
 so one half of the ip is here ans the other in the actual zone file.</p>
 <br />
 <br />
-<br/>
+<head>Stop resolving ipv6</head>
 <img src=  "images/no resolve ipv6 9.PNG"   height="80%" width="80%"/>
 <p align="center">Here we are not using ipv6 at this time so we should go into the 
 /etc/default/named file and allow only to resolve ipv4 address.

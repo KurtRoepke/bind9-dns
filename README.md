@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+     <style>
+            /* Your CSS rules go here */
+        </style>
 <body>
    <head>
 <h1>Bind 9 Primary and secondary dns server</h1>

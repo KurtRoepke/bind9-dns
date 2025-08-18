@@ -43,7 +43,8 @@ because the asa doesnt inspect icmp by default.<br />
   Configure pat <br />
 <img src= "images/set nat 3.PNG"    height="80%" width="80%"/>
   <br />
-<p align="center">create a network object for both the internal network and the dmz.
+  create a network object for both the internal network and the dmz.<br />
+  <br />
   <br />
 Next add an ip address to the object and point it to the external
 interface.<br />

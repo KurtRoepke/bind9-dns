@@ -59,17 +59,19 @@ Download bind9<br/>
 <img src=  "images/download bind9 5.PNG"   height="80%" width="80%"/>
 <p align="center">first use command "sudo apt-get update" to update the machine next use 
  <br /> 
-"sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.</p>
+"sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.<br />
 <br />
 <br />
 Change netplan<br/>
 <img src= "images/set netplan 6.PNG"    height="80%" width="80%"/>
+ <br /> 
 Modify the netplan file to change the dns server to its self using the
 loopback interface and its own ip address.<br />
 <br />
 <br />
 Named.conf.options<br/>
 <img src=  "images/named.conf.options 7.PNG"   height="80%" width="80%"/>
+  <br />
 This is the main file of bind 9 dns. first its good to have an acl for security 
 resons. This is also where you would add the dns forwarders and allow queries.<br />
 <br />

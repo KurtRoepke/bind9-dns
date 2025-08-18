@@ -35,7 +35,7 @@ Configure interfaces on asa firewall<br/>
 Create default route<br/>
 <img src= "images/icmp and default route 2.PNG"    height="80%" width="80%"/>
 <br />
-<p align="center">Create a default route pointing to the external network router to allow
+Create a default route pointing to the external network router to allow
 access to the external network. Here we will also modify the policy map
 because the asa doesnt inspect icmp by default.<br />
  <br />

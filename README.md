@@ -53,7 +53,8 @@ Change hostname on nameserver <br/>
 <br />
 Download bind9<br/>
 <img src=  "images/download bind9 5.PNG"   height="80%" width="80%"/>
-<p align="center">first use command "sudo apt-get update" to update the machine next use 
+<br /> 
+first use command "sudo apt-get update" to update the machine next use <br /> 
  <br /> 
 "sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.<br />
 <br />
@@ -72,7 +73,7 @@ This is the main file of bind 9 dns. first its good to have an acl for security
 resons. This is also where you would add the dns forwarders and allow queries.<br />
 <br />
 <br />
-<head align="center">Named.conf.local<head/>
+Named.conf.local<br /> 
 <img src="images/named.conf.local 8.PNG" height="80%" width="80%"/>
   <br />
 This is were you declare diffrent zones for this example we have a forward
@@ -80,7 +81,7 @@ and reverse zone. for the reverse zone dns looks up an ip for right to left
 so one half of the ip is here ans the other in the actual zone file.<br />
 <br />
 <br />
-<head>Stop resolving ipv6</head>
+Stop resolving ipv6 <br /> 
 <img src=  "images/no resolve ipv6 9.PNG"   height="80%" width="80%"/>
  <br /> 
 Here we are not using ipv6 at this time so we should go into the 

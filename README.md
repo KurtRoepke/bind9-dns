@@ -105,7 +105,7 @@ it resolves an ip address to a domain name.<br />
 add image of fuctioning output<br/>
 <img src=  "images/"   height="80%" width="80%"/>
 
-
+<p/>
 
 
 

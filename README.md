@@ -46,10 +46,6 @@ because the asa doesnt inspect icmp by default.<br />
   create a network object for both the internal network and the dmz.<br />
   <br />
   <br />
-Next add an ip address to the object and point it to the external
-interface.<br />
-<br />
-<br />
 Change hostname on nameserver <br/>
 <img src= "images/change hostname 4.PNG"    height="80%" width="80%"/>
   text<br />

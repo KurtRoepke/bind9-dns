@@ -21,75 +21,86 @@ Project consisting of a bind9 primary and secondary server connected to a cisco 
 
 <p align="center">
 The topology we will be using <br/>
+
 <img src="images/topology.PNG" height="80%" width="80%"/>
 <br />
 <br />
 Configure interfaces on asa firewall<br/>
 <img src="images/asa set interfaces 1.PNG"     height="80%" width="80%"/>
- <p align="center">Configure the interfaces on the asa firewall while changing the security level
- of the dmz zone to 50 so the internal interface can ping the dmz.</p>
+<br />
+ Configure the interfaces on the asa firewall while changing the security level
+ of the dmz zone to 50 so the internal interface can ping the dmz.<br />
 <br />
 <br />
 Create default route<br/>
 <img src= "images/icmp and default route 2.PNG"    height="80%" width="80%"/>
+<br />
 <p align="center">Create a default route pointing to the external network router to allow
 access to the external network. Here we will also modify the policy map
-because the asa doesnt inspect icmp by default.</p>
+because the asa doesnt inspect icmp by default.<br />
  <br />
  <br />
   Configure pat <br />
 <img src= "images/set nat 3.PNG"    height="80%" width="80%"/>
+  <br />
 <p align="center">create a network object for both the internal network and the dmz.
+  <br />
 Next add an ip address to the object and point it to the external
-interface.</p>
+interface.<br />
 <br />
 <br />
 Change hostname on nameserver <br/>
 <img src= "images/change hostname 4.PNG"    height="80%" width="80%"/>
+  text<br />
 <br />
 <br />
 Download bind9<br/>
 <img src=  "images/download bind9 5.PNG"   height="80%" width="80%"/>
 <p align="center">first use command "sudo apt-get update" to update the machine next use 
+ <br /> 
 "sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.</p>
 <br />
 <br />
 Change netplan<br/>
 <img src= "images/set netplan 6.PNG"    height="80%" width="80%"/>
-<p align="center">Modify the netplan file to change the dns server to its self using the
-loopback interface and its own ip address.</p>
+Modify the netplan file to change the dns server to its self using the
+loopback interface and its own ip address.<br />
 <br />
 <br />
 Named.conf.options<br/>
 <img src=  "images/named.conf.options 7.PNG"   height="80%" width="80%"/>
-<p align="center"> his is the main file of bind 9 dns. first its good to have an acl for security 
-resons. This is also where you would add the dns forwarders and allow queries.</p>
+This is the main file of bind 9 dns. first its good to have an acl for security 
+resons. This is also where you would add the dns forwarders and allow queries.<br />
 <br />
 <br />
 <head align="center">Named.conf.local<head/>
 <img src="images/named.conf.local 8.PNG" height="80%" width="80%"/>
-<p align="center">This is were you declare diffrent zones for this example we have a forward
+  <br />
+This is were you declare diffrent zones for this example we have a forward
 and reverse zone. for the reverse zone dns looks up an ip for right to left
-so one half of the ip is here ans the other in the actual zone file.</p>
+so one half of the ip is here ans the other in the actual zone file.<br />
 <br />
 <br />
 <head>Stop resolving ipv6</head>
 <img src=  "images/no resolve ipv6 9.PNG"   height="80%" width="80%"/>
-<p align="center">Here we are not using ipv6 at this time so we should go into the 
+ <br /> 
+Here we are not using ipv6 at this time so we should go into the 
 /etc/default/named file and allow only to resolve ipv4 address.
-this will simplify the logs.</p>
+this will simplify the logs.<br />
 <br />
 <br />
 Create soa file<br/>
 <img src=  "images/db.mylab soa 10.PNG"   height="80%" width="80%"/>
-<p align="center">The soa file it the main conifguration file for the zone. Here we have many diffrent 
-timers and the main dns files.</p>
+ <br /> 
+The soa file it the main conifguration file for the zone. Here we have many diffrent 
+timers and the main dns files.<br />
 <br />
 <br />
 configure reverse zone<br/>
 <img src=  "images/reverse zone 11.PNG"   height="80%" width="80%"/>
-<p align="center">This file is similar to the file above but intsted of resolving domain names
-it resolves an ip address to a domain name.</p>
+ <br /> 
+This file is similar to the file above but intsted of resolving domain names
+it resolves an ip address to a domain name.<br />
 <br />
 <br />
 add image of fuctioning output<br/>

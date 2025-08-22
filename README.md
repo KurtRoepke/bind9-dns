@@ -42,7 +42,7 @@ to inspect ismp.<br />
   Configure pat <br />
 <img src= "images/pat static route 4.PNG"    height="80%" width="80%"/>
   <br />
-  next we have to create a network object to configure pat to allow traffic to the outside network..<br />
+  next we have to create a network object to configure pat to allow traffic to the outside network.<br />
   <br />
   <br />
 Change hostname on nameserver <br/>
@@ -62,7 +62,7 @@ using the sudo apt-get update command. Then use the
 <br />
 Change netplan<br/>
 <img src= "images/netplan 8.PNG"    height="80%" width="80%"/>
- !!next!!<br /> 
+ <br /> 
 Now we need to change the dns server in the netplan file to use itself as the 
 dns server because we have downloaded all the files we need.<br />
 <br />
@@ -90,18 +90,18 @@ Here we are not using ipv6 at this time so we should go into the
 this will simplify the logs.<br />
 <br />
 <br />
-Create soa file<br/>
+Create zone file<br/>
 <img src=  "images/db.local 11.PNG"   height="80%" width="80%"/>
- !!next!!<br /> 
-The soa file it the main conifguration file for the zone. Here we have many diffrent 
-timers and the main dns files.<br />
+ <br /> 
+ The zone file is the main file for our dns zone. It consists of different timers
+and different dns records.<br />
 <br />
 <br />
 configure reverse zone<br/>
 <img src=  "images/reverse zone 12.PNG"   height="80%" width="80%"/>
- !!next!!<br /> 
-This file is similar to the file above but intsted of resolving domain names
-it resolves an ip address to a domain name.<br />
+<br /> 
+This file is similar to the file above but instead of resolving domain names to ip
+addresses it resolves ip addresses to domain names.<br />
 <br />
 <br />
 add image of fuctioning output<br/>

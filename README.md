@@ -104,9 +104,12 @@ This file is similar to the file above but instead of resolving domain names to 
 addresses it resolves ip addresses to domain names.<br />
 <br />
 <br />
-add image of fuctioning output<br/>
-<img src=  "images/"   height="80%" width="80%"/>
-
+Check funtionality<br/>
+<img src=  "images/nslookup end.PNG"   height="80%" width="80%"/>
+<br /> 
+Finaly use nslookup to make sure you can resolve both forward and reverse dns queries.<br />
+<br />
+<br />
 <p/>
 
 

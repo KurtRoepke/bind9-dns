@@ -47,9 +47,7 @@ to inspect ismp.<br />
   <br />
  Change hostname on nameserver <br/>
  <img src= "images/set netplan ip 5.PNG"    height="80%" width="80%"/>
- Now we are ready to set up the ubuntu machine. Once you are loged in you have to 
- modify the netplan file to set up a static ip and set the dns server to an outside
- server to allow for updates and to install bind9.text<br />
+<br />
 <br />
 <br />
 Download bind9<br/>

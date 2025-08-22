@@ -84,7 +84,7 @@ so one half of the ip is here ans the other in the actual zone file.<br />
 <br />
 <br />
 Stop resolving ipv6 <br /> 
-<img src=  "images/"   height="80%" width="80%"/>
+<img src=  "images/defaults.named-ipv4-only.PNG"   height="80%" width="80%"/>
  !!next!!<br /> 
 Here we are not using ipv6 at this time so we should go into the 
 /etc/default/named file and allow only to resolve ipv4 address.

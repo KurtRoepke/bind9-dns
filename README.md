@@ -45,11 +45,11 @@ to inspect ismp.<br />
   next we have to create a network object to configure pat to allow traffic to the outside network.<br />
   <br />
   <br />
-Change hostname on nameserver <br/>
-<img src= "images/set netplan ip 5.PNG"    height="80%" width="80%"/>
-Now we are ready to set up the ubuntu machine. Once you are loged in you have to 
-modify the netplan file to set up a static ip and set the dns server to an outside
-server to allow for updates and to install bind9.text<br />
+ Change hostname on nameserver <br/>
+ <img src= "images/set netplan ip 5.PNG"    height="80%" width="80%"/>
+ Now we are ready to set up the ubuntu machine. Once you are loged in you have to 
+ modify the netplan file to set up a static ip and set the dns server to an outside
+ server to allow for updates and to install bind9.text<br />
 <br />
 <br />
 Download bind9<br/>
@@ -97,7 +97,7 @@ Create zone file<br/>
 and different dns records.<br />
 <br />
 <br />
-configure reverse zone<br/>
+Configure reverse zone<br/>
 <img src=  "images/reverse zone 12.PNG"   height="80%" width="80%"/>
 <br /> 
 This file is similar to the file above but instead of resolving domain names to ip

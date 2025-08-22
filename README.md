@@ -55,51 +55,51 @@ server to allow for updates and to install bind9.text<br />
 Download bind9<br/>
 <img src=  "images/update ubuntu 6.PNG"   height="80%" width="80%"/>
 <br /> 
-its best practice to update the machine use sudo apt-get update.<br /> 
- <br /> 
-!!"sudo apt install bind9 bind9utils bind9-doc -y" to install bind9.!!<br />
+ Before we install bind9 its best to make sure the operating system is updated 
+using the sudo apt-get update command. Then use the 
+"sudo apt install bind9 bind9utils bind9-doc -y"to install bind9.<br /> 
 <br />
 <br />
 Change netplan<br/>
-<img src= "images/"    height="80%" width="80%"/>
- <br /> 
-Modify the netplan file to change the dns server to its self using the
-loopback interface and its own ip address.<br />
+<img src= "images/netplan 8.PNG"    height="80%" width="80%"/>
+ !!next!!<br /> 
+Now we need to change the dns server in the netplan file to use itself as the 
+dns server because we have downloaded all the files we need.<br />
 <br />
 <br />
 Named.conf.options<br/>
-<img src=  "images/"   height="80%" width="80%"/>
-  <br />
-This is the main file of bind 9 dns. first its good to have an acl for security 
-resons. This is also where you would add the dns forwarders and allow queries.<br />
+<img src=  "images/named.conf.options 9.PNG"   height="80%" width="80%"/>
+<br />
+This is the main file of bind 9 dns. First its good to have an acl for security 
+reasons. This is also the file where you would add the dns forwarders and, allow queries.<br />
 <br />
 <br />
 Named.conf.local<br /> 
-<img src="images/" height="80%" width="80%"/>
-  <br />
+<img src="images/named.conf.local 10.PNG" height="80%" width="80%"/>
+<br />
 This is were you declare diffrent zones for this example we have a forward
-and reverse zone. for the reverse zone dns looks up an ip for right to left
+and reverse zone. For the reverse zone dns looks up an ip for right to left
 so one half of the ip is here ans the other in the actual zone file.<br />
 <br />
 <br />
 Stop resolving ipv6 <br /> 
 <img src=  "images/"   height="80%" width="80%"/>
- <br /> 
+ !!next!!<br /> 
 Here we are not using ipv6 at this time so we should go into the 
 /etc/default/named file and allow only to resolve ipv4 address.
 this will simplify the logs.<br />
 <br />
 <br />
 Create soa file<br/>
-<img src=  "images/"   height="80%" width="80%"/>
- <br /> 
+<img src=  "images/db.local 11.PNG"   height="80%" width="80%"/>
+ !!next!!<br /> 
 The soa file it the main conifguration file for the zone. Here we have many diffrent 
 timers and the main dns files.<br />
 <br />
 <br />
 configure reverse zone<br/>
-<img src=  "images/"   height="80%" width="80%"/>
- <br /> 
+<img src=  "images/reverse zone 12.PNG"   height="80%" width="80%"/>
+ !!next!!<br /> 
 This file is similar to the file above but intsted of resolving domain names
 it resolves an ip address to a domain name.<br />
 <br />

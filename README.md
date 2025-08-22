@@ -47,8 +47,10 @@ to inspect ismp.<br />
   <br />
  Set up basic network functions  <br/>
  <img src= "images/set netplan ip 5.PNG"    height="80%" width="80%"/>
-Now we are ready to set up the ubuntu machine. Modify the netplan file to set up basic addresses
-for network connectivity to allow for updates and to install bind9.<br />
+ <br />
+Now we are ready to set up the ubuntu machine. Modify the netplan
+file to set up basic addresses for network connectivity to allow for updates 
+and to install bind9.<br />
 <br />
 <br />
 Download bind9<br/>

@@ -42,7 +42,8 @@ to inspect ismp.<br />
   Configure pat <br />
 <img src= "images/pat static route 4.PNG"    height="80%" width="80%"/>
   <br />
-  next we have to create a network object to configure pat to allow traffic to the outside network.<br />
+  next we have to create a network object to configure pat to allow traffic to the outside network.
+  We also need a default route to network traffic knows where to go for connectivity to the external network.<br />
   <br />
   <br />
  Set up basic network functions  <br/>

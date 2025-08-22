@@ -45,9 +45,10 @@ to inspect ismp.<br />
   next we have to create a network object to configure pat to allow traffic to the outside network.<br />
   <br />
   <br />
- Change hostname on nameserver <br/>
+ Set up basic network functions  <br/>
  <img src= "images/set netplan ip 5.PNG"    height="80%" width="80%"/>
-<br />
+Now we are ready to set up the ubuntu machine. Modify the netplan file to set up basic addresses
+for network connectivity to allow for updates and to install bind9.<br />
 <br />
 <br />
 Download bind9<br/>
